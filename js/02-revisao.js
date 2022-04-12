@@ -1,3 +1,4 @@
+'use strict';
 console.log("Revisão JS Senac");
 
 let bebida = "suco de laranja";

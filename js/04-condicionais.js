@@ -1,3 +1,4 @@
+'use strict';
 /* Estrutura condicional 
 if (se), else (senão) and else if (senão se)
 

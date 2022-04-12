@@ -1,3 +1,4 @@
+'use strict';
 /*  Estrutura de Dados no JS
 ARRAY (Vetor [indicado por colchetes])
 Lista de dados indexados*/

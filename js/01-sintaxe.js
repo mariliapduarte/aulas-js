@@ -1,3 +1,4 @@
+'use strict';    
       // comando de saída de dados:
       console.log('Olá, Javascript');
       // Sempre que trabalhar com textos, devemos colocá-lo entre aspas 'simples', "duplas", `crases`
