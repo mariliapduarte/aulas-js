@@ -25,15 +25,19 @@ if (numero < 2){
 
 // Exemplo 2: condicional COMPOSTA (if e else)
 let aluno = "João";
-let nota1 = 5;
-let nota2 = 8;
+let nota1 = 9;
+let nota2 = 9.2;
+let faltas = 20;
 let media = (nota1 + nota2)/ 2; /* utiliza () para indicar a prioridade da conta (+), se não ele calcularia a divisão primeiro. */
 
 console.log(`Aluno: ${aluno}`);
 console.log(`Notas: ${nota1} e ${nota2}`);
 console.log(`Média: ${media.toFixed(2)}`);
+console.log(`Faltas: ${faltas}`);
 
-if( media >=7 ){
+// if( media >=7 ){
+if(media >= 7 && faltas < 15){
+    /* && é um operador lógico "E" usado para avaliar mais de uma condição ao mesmo tempo */
     console.log("Aprovado");
 
 } else {
