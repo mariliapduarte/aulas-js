@@ -23,10 +23,73 @@ console.log(`Ano: ${ano}`);
 linha();
 
               //Parâmetros ou argumentos
-function soma(valor1, valor2){
-    let total = valor1 + valor2 //variável local, não vai funcionar fora da "função soma", porisso no lugar de usar com console.log de total, usar:
+
+// VERSÃO 1: sintaxe tradicional
+// function soma(valor1, valor2){
+//     let total = valor1 + valor2 //variável local, não vai funcionar fora da "função soma", porisso no lugar de usar com console.log de total, usar:
+//     return total;
+// }
+
+// VERSÃO 2: sintaxe arrow function (Função seta/flecha)
+const soma = (valor1, valor2) => {
+    let total = valor1 + valor2;
     return total;
+};
+
+// Arrow function com retorno ÍMPLICITO
+const soma1 = (valor1, valor2) => valor1 + valor2
+
+console.log( soma(200,5) );
+
+let resultado = soma(100, 50);
+console.log(resultado);
+
+if(resultado < 1000){
+    console.log("Abaixo da meta");
 }
 
-console.log( soma(10,5) );
+
+linha();
+
+// Versão 1: tradicional
+/* function dobra(numero){
+    let resultado = numero * 2;
+    return resultado;
+} */
+
+/* function dobra(numero){
+    return numero * 2;
+} */
+
+
+// Versão 2: arrow function
+/* const dobra = (numero) => {
+    let resultado = numero * 2;
+    return resultado;
+}; */
+
+/* const dobra = (numero) => { 
+    return numero * 2;
+}; */
+
+// retorno IMPLÍCITO (remove {} e return)
+// Obs.: como só temos um parâmetro (numero), pode tirar os ()
+const dobra = numero => numero * 2;
+
+console.log( dobra(10) );
+console.log( dobra(150) );
+
+linha();
+
+let nota1 = 8.5;
+let nota2 = 7.4;
+
+const calculaMedia = (n1, n2) => (n1 + n2) / 2;
+
+console.log( calculaMedia(nota1, nota2) );
+
+// Obs.: se não tem parâmetros, também precisa usar ()
+const linha2 = () => console.log("*****");
+
+
 
